@@ -1,31 +1,31 @@
 variable "name" {
-    type        = string
-    description = "The name to apply to the database resource."
+  type        = string
+  description = "The name to apply to the database resource."
 }
 variable "comment" {
-    type        = string
-    description = "A  comment to add to the database resource."
-    default     = "Created by Terraform."
+  type        = string
+  description = "A  comment to add to the database resource."
+  default     = "Created by Terraform."
 }
 variable "from_database" {
-    type        = string
-    description = "Specify a database to create a clone from."
-    default     = null
+  type        = string
+  description = "Specify a database to create a clone from."
+  default     = null
 }
 variable "from_replica" {
-    type        = string
-    description = "Specify a fully-qualified path to a database to create a replica from."
-    default     = null
+  type        = string
+  description = "Specify a fully-qualified path to a database to create a replica from."
+  default     = null
 }
 variable "from_share" {
-    type        = map(string)
-    description = "Specify a provider and a share in this map to create a database from a share."
-    default     = {}
+  type        = map(string)
+  description = "Specify a provider and a share in this map to create a database from a share."
+  default     = {}
 }
 variable "data_retention_time_in_days" {
-    type        = string
-    description = "Days to retain deleted data for. Default is 1"
-    default     = 1
+  type        = string
+  description = "Days to retain deleted data for. Default is 1"
+  default     = 1
 }
 variable "attach_grant_usage" {
   type        = bool
