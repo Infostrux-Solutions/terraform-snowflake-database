@@ -1,4 +1,5 @@
-# Snowflake Database
+# Snowflake Database Terraform Module
+Terraform module which creates a Database in Snowflake.
 
 ## Usage
 
