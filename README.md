@@ -75,3 +75,6 @@ No modules.
 | <a name="output_database_id"></a> [database\_id](#output\_database\_id) | The database resource ID. |
 | <a name="output_database_name"></a> [database\_name](#output\_database\_name) | The database resource name. |
 <!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
+
+## Authors
+The module is maintained by @mvanzanten  with the help of @eyloninfostrux  and @charlesInfostrux 
