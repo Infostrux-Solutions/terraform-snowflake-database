@@ -19,13 +19,13 @@ $ terraform apply
 | Name | Version |
 |------|---------|
 | <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | >= 0.13.1 |
-| <a name="requirement_snowflake"></a> [snowflake](#requirement\_snowflake) | >=0.31.0 |
+| <a name="requirement_snowflake"></a> [snowflake](#requirement\_snowflake) | >=0.40.0 |
 
 ## Providers
 
 | Name | Version |
 |------|---------|
-| <a name="provider_snowflake"></a> [snowflake](#provider\_snowflake) | 0.33.1 |
+| <a name="provider_snowflake"></a> [snowflake](#provider\_snowflake) | 0.40.0 |
 
 ## Modules
 
@@ -35,11 +35,11 @@ No modules.
 
 | Name | Type |
 |------|------|
-| [snowflake_database.database](https://registry.terraform.io/providers/chanzuckerberg/snowflake/latest/docs/resources/database) | resource |
-| [snowflake_database_grant.grant_create_schema](https://registry.terraform.io/providers/chanzuckerberg/snowflake/latest/docs/resources/database_grant) | resource |
-| [snowflake_database_grant.grant_modify](https://registry.terraform.io/providers/chanzuckerberg/snowflake/latest/docs/resources/database_grant) | resource |
-| [snowflake_database_grant.grant_monitor](https://registry.terraform.io/providers/chanzuckerberg/snowflake/latest/docs/resources/database_grant) | resource |
-| [snowflake_database_grant.grant_usage](https://registry.terraform.io/providers/chanzuckerberg/snowflake/latest/docs/resources/database_grant) | resource |
+| [snowflake_database.database](https://registry.terraform.io/providers/Snowflake-Labs/snowflake/latest/docs/resources/database) | resource |
+| [snowflake_database_grant.grant_create_schema](https://registry.terraform.io/providers/Snowflake-Labs/snowflake/latest/docs/resources/database_grant) | resource |
+| [snowflake_database_grant.grant_modify](https://registry.terraform.io/providers/Snowflake-Labs/snowflake/latest/docs/resources/database_grant) | resource |
+| [snowflake_database_grant.grant_monitor](https://registry.terraform.io/providers/Snowflake-Labs/snowflake/latest/docs/resources/database_grant) | resource |
+| [snowflake_database_grant.grant_usage](https://registry.terraform.io/providers/Snowflake-Labs/snowflake/latest/docs/resources/database_grant) | resource |
 
 ## Inputs
 
@@ -77,4 +77,4 @@ No modules.
 <!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
 
 ## Authors
-The module is maintained by @mvanzanten  with the help of @eyloninfostrux  and @charlesInfostrux 
+The module is maintained by @mvanzanten  with the help of @eyloninfostrux  and @charlesInfostrux
