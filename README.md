@@ -54,9 +54,6 @@ No modules.
 | <a name="input_create_schema_shares"></a> [create\_schema\_shares](#input\_create\_schema\_shares) | A list of roles that will be granted create\_schema on the database shares. | `list(string)` | `[]` | no |
 | <a name="input_create_schema_with_grant_option"></a> [create\_schema\_with\_grant\_option](#input\_create\_schema\_with\_grant\_option) | When this is set to true, allows the recipient role to grant the privileges to other roles. | `bool` | `false` | no |
 | <a name="input_data_retention_time_in_days"></a> [data\_retention\_time\_in\_days](#input\_data\_retention\_time\_in\_days) | Days to retain deleted data for. Default is 1 | `string` | `1` | no |
-| <a name="input_from_database"></a> [from\_database](#input\_from\_database) | Specify a database to create a clone from. | `string` | `null` | no |
-| <a name="input_from_replica"></a> [from\_replica](#input\_from\_replica) | Specify a fully-qualified path to a database to create a replica from. | `string` | `null` | no |
-| <a name="input_from_share"></a> [from\_share](#input\_from\_share) | Specify a provider and a share in this map to create a database from a share. | `map(string)` | `{}` | no |
 | <a name="input_modify_roles"></a> [modify\_roles](#input\_modify\_roles) | A list of roles that will be granted modify on the database. | `list(string)` | `[]` | no |
 | <a name="input_modify_shares"></a> [modify\_shares](#input\_modify\_shares) | A list of roles that will be granted modify on the database shares. | `list(string)` | `[]` | no |
 | <a name="input_modify_with_grant_option"></a> [modify\_with\_grant\_option](#input\_modify\_with\_grant\_option) | When this is set to true, allows the recipient role to grant the privileges to other roles. | `bool` | `false` | no |
