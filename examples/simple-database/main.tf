@@ -16,6 +16,6 @@ module "database" {
   source = "../../"
 
   name    = "database_name"
-  comment = "Attaching a comment"
+  comment = "Created by Terraform"
 
 }
