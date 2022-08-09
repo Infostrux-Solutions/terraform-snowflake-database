@@ -74,4 +74,4 @@ No modules.
 <!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
 
 ## Authors
-The module is maintained by @mvanzanten  with the help of @eyloninfostrux  and @charlesInfostrux
+Module is maintained by [Infostrux Solutions](mailto:opensource@infostrux.com)
