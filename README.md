@@ -1,19 +1,51 @@
 # Snowflake Database Terraform Module
-Terraform module which creates a Database in Snowflake.
+Quickly deploy Snowflake Database resources and attach Grants using a Terraform Module.
 
-## Usage
+## Usage## Usage
+Simple usage:
 
-To run this example you need to execute:
+```hcl
+module "database" {
+  source = "Infostrux-Solutions/database/snowflake"
 
-```bash
-$ terraform init
-$ terraform plan
-$ terraform apply
+  name    = "DATABASE_NAME"
+  comment = "Created by Terraform"
+
+}
 ```
 
- Run `terraform destroy` when you don't need the user.
+Full usage:
+```hcl
+module "database" {
+  source = "Infostrux-Solutions/database/snowflake"
 
-<!-- BEGINNING OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
+  name = "DATABASE_NAME"
+
+  attach_grant_usage      = true
+  usage_roles             = ["SYSADMIN"]
+  usage_shares            = []
+  usage_with_grant_option = true
+
+  attach_grant_modify      = true
+  modify_roles             = ["SYSADMIN"]
+  modify_shares            = []
+  modify_with_grant_option = true
+
+  attach_grant_create_schema      = true
+  create_schema_roles             = ["SYSADMIN"]
+  create_schema_shares            = []
+  create_schema_with_grant_option = true
+
+  attach_grant_monitor      = true
+  monitor_roles             = ["SYSADMIN"]
+  monitor_shares            = []
+  monitor_with_grant_option = true
+
+  data_retention_time_in_days = 1
+}
+```
+
+<!-- BEGIN_TF_DOCS -->
 ## Requirements
 
 | Name | Version |
@@ -25,7 +57,7 @@ $ terraform apply
 
 | Name | Version |
 |------|---------|
-| <a name="provider_snowflake"></a> [snowflake](#provider\_snowflake) | 0.40.0 |
+| <a name="provider_snowflake"></a> [snowflake](#provider\_snowflake) | >=0.40.0 |
 
 ## Modules
 
@@ -71,7 +103,10 @@ No modules.
 |------|-------------|
 | <a name="output_database_id"></a> [database\_id](#output\_database\_id) | The database resource ID. |
 | <a name="output_database_name"></a> [database\_name](#output\_database\_name) | The database resource name. |
-<!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
+<!-- END_TF_DOCS -->
 
 ## Authors
-Module is maintained by [Infostrux Solutions](mailto:opensource@infostrux.com)
+Module is maintained by [Infostrux Solutions](mailto:opensource@infostrux.com) with help from [these awesome contributors](https://github.com/Infostrux-Solutions/terraform-snowflake-database/graphs/contributors).
+
+## License
+Apache 2 Licensed. See [LICENSE](https://github.com/Infostrux-Solutions/terraform-snowflake-database/blob/main/LICENSE) for full details.
